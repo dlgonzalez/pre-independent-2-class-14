@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Independent 2 · Unit 6 · Class 14</title>
+<style>
+:root{--navy:#172844;--blue:#3867d6;--cyan:#45c3d5;--gold:#f3b83f;--coral:#ef765f;--green:#27866d;--ink:#18243b;--muted:#64718a;--line:#e4e9f2;--bg:#f5f7fb}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 0% 0%,#e6f4f7,transparent 25%),radial-gradient(circle at 100% 10%,#fff0df,transparent 25%),var(--bg);font-family:Inter,system-ui,Segoe UI,sans-serif;color:var(--ink);min-height:100vh}button,input,textarea,select{font:inherit}button{cursor:pointer;border:0}
+.app{max-width:1180px;margin:auto;padding:18px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}.brand{display:flex;align-items:center;gap:11px}.logo{width:44px;height:44px;border-radius:14px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:22px}.brand small{display:block;font-size:10px;letter-spacing:.16em;font-weight:900;color:var(--muted)}.brand b{font-size:16px}.unit{font-size:12px;font-weight:850;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:99px;padding:9px 13px}
+.nav{display:flex;gap:7px;flex-wrap:wrap;padding:8px;background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:17px;position:sticky;top:6px;z-index:10;box-shadow:0 5px 20px #1728440c}.nav button{padding:9px 12px;border-radius:10px;background:transparent;color:var(--muted);font-size:12px;font-weight:850}.nav button.active{background:var(--navy);color:#fff}
+.section{display:none;animation:fade .2s ease}.section.active{display:block}@keyframes fade{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}
+.hero{background:linear-gradient(120deg,#172844,#24466c 68%,#277c8b);color:white;border-radius:25px;padding:clamp(25px,5vw,52px);min-height:290px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 18px 45px #1728441c}.eyebrow{font-size:11px;font-weight:950;letter-spacing:.18em;color:#8ee4e8}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1;margin:14px 0}.hero p{max-width:750px;color:#dbe8f5;font-size:16px;line-height:1.7}.hero .btn{align-self:flex-start;margin-top:12px}
+h2{font-size:clamp(25px,4vw,38px);margin:8px 0 10px}h3{font-size:20px;margin:4px 0 10px}h4{margin:0 0 7px}.lead{color:var(--muted);line-height:1.65;max-width:850px}.tag{display:inline-block;border-radius:99px;padding:6px 10px;background:#eaf5f7;color:#176b78;font-size:10px;letter-spacing:.1em;font-weight:950}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:19px;box-shadow:0 9px 28px #17284408}.card p{line-height:1.6}.muted{color:var(--muted)}.small{font-size:13px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border-radius:12px;font-weight:900}.primary{background:var(--blue);color:#fff}.dark{background:var(--navy);color:#fff}.light{background:#edf1f7;color:var(--ink)}.gold{background:var(--gold);color:#29354b}.outline{background:#fff;border:1px solid var(--line);color:var(--ink)}.btnrow{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}.callout{border-left:4px solid var(--cyan);background:#eff8fa;padding:14px 17px;border-radius:0 13px 13px 0;line-height:1.6}.warning{border-left-color:var(--coral);background:#fff3ef}.success{border-left-color:var(--green);background:#edf8f3}
+.step{display:flex;gap:12px;align-items:flex-start}.stepnum{width:30px;height:30px;flex:none;border-radius:10px;background:#eaf0ff;color:var(--blue);display:grid;place-items:center;font-weight:950}.example{background:#f5f7fb;border:1px solid var(--line);border-radius:13px;padding:13px 15px;margin:9px 0;line-height:1.6}.hl{background:#fff0be;border-radius:4px;padding:1px 4px;font-weight:850}.rel{color:#176b9a;font-weight:900}.noun{color:#a14b37;font-weight:900}.connector{color:#27866d;font-weight:950}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}.compare .card{padding:16px}.bad{background:#fff4f1;border-color:#f4d4cb}.goodcard{background:#eff8f3;border-color:#cde8d9}.rule{font-size:13px;color:var(--muted);line-height:1.55}
+.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;background:white;border-radius:14px;overflow:hidden}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);font-size:13px;line-height:1.5}th{background:#edf2fa;color:#34425c}tr:last-child td{border-bottom:0}
+.tabs{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0}.tabs button{background:#edf1f7;padding:9px 13px;border-radius:10px;font-size:12px;font-weight:850;color:var(--ink)}.tabs button.active{background:var(--blue);color:white}.tabpane{display:none}.tabpane.active{display:block}
+.quiz{background:white;border:1px solid var(--line);border-radius:18px;padding:20px;margin:14px 0}.qtop{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:11px;font-weight:900;letter-spacing:.1em}.qtext{font-size:18px;font-weight:850;line-height:1.5;margin:14px 0}.opts{display:grid;grid-template-columns:1fr 1fr;gap:9px}.opt{background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px;text-align:left;font-weight:750;color:var(--ink);line-height:1.4}.opt.selected{border-color:var(--blue);background:#edf3ff}.opt.correct{border-color:var(--green);background:#edf8f3}.opt.wrong{border-color:var(--coral);background:#fff1ed}.opt:disabled{cursor:default}.feedback{display:none;margin-top:13px;padding:13px 15px;border-radius:12px;line-height:1.5;font-size:14px}.feedback.show{display:block}.feedback.ok{background:#edf8f3;color:#17644f}.feedback.no{background:#fff1ed;color:#8a3e30}.quizcontrols{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}.progress{height:8px;background:#e6ebf3;border-radius:99px;overflow:hidden;margin:10px 0}.progress span{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--blue));width:0}
+input[type=text],textarea{width:100%;border:1px solid #ccd5e2;border-radius:10px;padding:11px;background:#fff;color:var(--ink)}textarea{min-height:95px;resize:vertical}.label{font-size:11px;font-weight:900;letter-spacing:.08em;color:var(--muted);display:block;margin:12px 0 6px}
+.sortrow{display:grid;grid-template-columns:1fr 140px;gap:10px;align-items:center;margin:8px 0;padding:11px;border:1px solid var(--line);border-radius:12px}.sortrow select{padding:9px;border:1px solid #ccd5e2;border-radius:9px}
+.footerNav{display:flex;justify-content:space-between;gap:10px;margin-top:20px;padding-top:15px;border-top:1px solid var(--line)}.checklist{list-style:none;padding:0}.checklist li{padding:8px 0;border-bottom:1px solid var(--line);line-height:1.5}.checklist li:before{content:"✓";color:var(--green);font-weight:950;margin-right:9px}
+@media(max-width:760px){.app{padding:10px}.top{align-items:flex-start;flex-direction:column}.nav{position:static}.grid,.grid3,.compare{grid-template-columns:1fr}.opts{grid-template-columns:1fr}.sortrow{grid-template-columns:1fr 115px}.hero{min-height:320px}}
+</style></head>
+<body><div class="app">
+<header class="top"><div class="brand"><div class="logo">✦</div><div><small>PRE-INDEPENDENT 2 · B1</small><b>UNIT 6 · MOMENTS IN TIME</b></div></div><div class="unit">CLASS 14 · DESCRIBE & CONNECT</div></header>
+<nav class="nav" id="nav">
+<button class="active" data-go="start">START</button><button data-go="detectives">DETECTIVES</button><button data-go="reports">CONNECT THE FACTS</button><button data-go="discover">DISCOVER GRAMMAR</button><button data-go="toolkit">GRAMMAR TOOLKIT</button><button data-go="practice">PRACTICE LAB</button><button data-go="upgrade">UPGRADE YOUR REPORT</button>
+</nav>
+<main>
+<section class="section active" id="start">
+<div class="hero"><div class="eyebrow">UNIT 6 · CLASS 14</div><h1>THE PEOPLE & IDEAS<br>BEHIND INVENTIONS</h1><p>Today, you will return to the inventions you explored in your videos. You will learn how to connect information, describe people and things more precisely, and make your reports sound clearer and more complete.</p><button class="btn gold" onclick="go('detectives')">LET'S INVESTIGATE →</button></div>
+<div class="grid3" style="margin-top:14px">
+<div class="card"><div style="font-size:25px">🔎</div><h3>Investigate</h3><p class="small muted">Recognize inventions and examine claims.</p></div>
+<div class="card"><div style="font-size:25px">🧩</div><h3>Connect ideas</h3><p class="small muted">Understand how relative clauses join information.</p></div>
+<div class="card"><div style="font-size:25px">✍️</div><h3>Improve your report</h3><p class="small muted">Use the grammar to describe an invention and its inventor.</p></div>
+</div>
+<div class="card" style="margin-top:14px"><span class="tag">TODAY'S MISSION</span><h3>By the end of this class, you can…</h3><ul class="checklist"><li>identify the noun that a relative clause describes</li><li>choose who, which, that, where, when or whose</li><li>combine two short sentences without repeating information</li><li>decide when a relative pronoun can be omitted</li><li>upgrade part of your video report using defining relative clauses</li></ul></div>
+<div class="footerNav"><span></span><button class="btn primary" onclick="go('detectives')">NEXT: DETECTIVES →</button></div>
+</section>
+
+<section class="section" id="detectives">
+<span class="tag">WARM-UP · TEAM CHALLENGE</span><h2>The Invention Detectives</h2><p class="lead">Your team has 15 invention files to solve. In each file, identify the invention and then decide whether a statement is a fact or a myth. Read carefully, discuss your ideas and check the evidence.</p>
+<div class="card">
+<div class="grid" style="align-items:center"><div><h3>Ready to open the case files?</h3><p class="small muted">The game is a separate activity so it can be opened, projected and played independently.</p><ul class="checklist"><li>15 invention cases</li><li>Two tests per case</li><li>Explanations after each answer</li><li>Team points and final score</li></ul></div><div style="text-align:center;background:#f0f4fb;border-radius:15px;padding:20px"><div style="font-size:48px">🕵️</div><b>CASE FILES</b><p class="small muted">Open the game in a new tab.</p><a class="btn primary" href="https://sites.google.com/view/inventions-game/game" target="_blank" rel="noopener">OPEN THE WARM-UP GAME ↗</a><p class="small muted">Inventions Game · Opens in a new tab.</p></div></div>
+</div>
+<div class="callout" style="margin-top:14px"><b>After the game:</b> Think about one invention you recognized. What is it? Who developed it? What problem does it solve? These are the kinds of details we can connect using today's grammar.</div>
+<div class="footerNav"><button class="btn light" onclick="go('start')">← BACK</button><button class="btn primary" onclick="go('reports')">NEXT: YOUR REPORTS →</button></div>
+</section>
+
+<section class="section" id="reports">
+<span class="tag">DISCOVERY CHALLENGE · BEFORE THE GRAMMAR</span><h2>Connect the invention facts</h2><p class="lead">You have six mini fact files. Each file contains short pieces of information about one invention. Read the facts, decide which ideas belong together and try to connect them into one clear sentence. Don't worry if you are not sure which word to use yet — make a prediction and check the model afterwards.</p>
+<div class="callout"><b>Your challenge:</b> Find the noun that appears in both facts. Then think about how you could connect the ideas without repeating that noun. Try to use a word such as WHO, WHICH, THAT, WHERE, WHEN or WHOSE.</div>
+<div class="card" style="margin-top:14px">
+<span class="tag">BEFORE YOU TRY · TWO GUIDED EXAMPLES</span>
+<h3>Let's connect two facts step by step</h3>
+<p class="small muted">Watch how two short sentences become one sentence with a defining relative clause.</p>
+<div class="example">
+<b>EXAMPLE 1 · DESCRIBING A PERSON</b>
+<p><b>FACT A:</b> Alexander Graham Bell was an inventor.</p>
+<p><b>FACT B:</b> He developed an early telephone.</p>
+<p><b>STEP 1 · Find the repeated idea:</b> Alexander Graham Bell = he. Both facts talk about the same person.</p>
+<p><b>STEP 2 · Choose the connector:</b> Use <b>WHO</b> because we are describing a person.</p>
+<p><b>STEP 3 · Join the ideas:</b></p>
+<div class="callout"><b>Alexander Graham Bell was an inventor <span class="key">who developed an early telephone</span>.</b></div>
+<p class="small"><b>Notice:</b> The clause <i>who developed an early telephone</i> tells us which inventor we mean. We do not repeat his name or use <i>he</i> again.</p>
+</div>
+<div class="example">
+<b>EXAMPLE 2 · DESCRIBING A THING</b>
+<p><b>FACT A:</b> The telephone is a communication device.</p>
+<p><b>FACT B:</b> People use this device to talk to someone far away.</p>
+<p><b>STEP 1 · Find the repeated idea:</b> the telephone = this device. Both facts talk about the same thing.</p>
+<p><b>STEP 2 · Choose the connector:</b> Use <b>THAT</b> or <b>WHICH</b> because we are describing a thing.</p>
+<p><b>STEP 3 · Join the ideas:</b></p>
+<div class="callout"><b>The telephone is a communication device <span class="key">that people use to talk to someone far away</span>.</b></div>
+<p class="small"><b>Notice:</b> The clause <i>that people use to talk to someone far away</i> gives us more information about the device. The sentence is now more connected and less repetitive.</p>
+</div>
+<div class="transition"><b>Your turn:</b> In each file below, follow the same three steps: find the repeated idea, choose a relative word, and connect the facts. Then reveal one possible answer to compare.</div>
+</div>
+<div class="grid" style="margin-top:14px">
+<div class="card"><span class="tag">FILE 01 · THE STETHOSCOPE</span><h3>Two facts. One sentence.</h3><div class="example"><b>FACT A</b><br>A stethoscope is a medical instrument.</div><div class="example"><b>FACT B</b><br>Doctors use this instrument to listen to sounds inside the body.</div><p class="small muted"><b>Try:</b> A stethoscope is a medical instrument...</p><button class="btn light reveal" data-answer="A stethoscope is a medical instrument that doctors use to listen to sounds inside the body.">REVEAL ONE POSSIBLE CONNECTION</button><div class="feedback"></div></div>
+<div class="card"><span class="tag">FILE 02 · BRAILLE</span><h3>Connect the system and its feature</h3><div class="example"><b>FACT A</b><br>Braille is a reading and writing system.</div><div class="example"><b>FACT B</b><br>The system uses patterns of raised dots.</div><p class="small muted"><b>Try:</b> Braille is a system...</p><button class="btn light reveal" data-answer="Braille is a reading and writing system that uses patterns of raised dots.">REVEAL ONE POSSIBLE CONNECTION</button><div class="feedback"></div></div>
+<div class="card"><span class="tag">FILE 03 · VELCRO</span><h3>Describe the person</h3><div class="example"><b>FACT A</b><br>George de Mestral was an engineer.</div><div class="example"><b>FACT B</b><br>He developed the hook-and-loop fastening system known as Velcro.</div><p class="small muted"><b>Try:</b> George de Mestral was an engineer...</p><button class="btn light reveal" data-answer="George de Mestral was an engineer who developed the hook-and-loop fastening system known as Velcro.">REVEAL ONE POSSIBLE CONNECTION</button><div class="feedback"></div></div>
+<div class="card"><span class="tag">FILE 04 · THE WORLD WIDE WEB</span><h3>Connect the person and the idea</h3><div class="example"><b>FACT A</b><br>Tim Berners-Lee proposed the World Wide Web.</div><div class="example"><b>FACT B</b><br>His idea connected information through linked pages.</div><p class="small muted"><b>Try:</b> Tim Berners-Lee was the person...</p><button class="btn light reveal" data-answer="Tim Berners-Lee was the person who proposed the World Wide Web, a system that connects information through linked pages.">REVEAL ONE POSSIBLE CONNECTION</button><div class="feedback"></div></div>
+<div class="card"><span class="tag">FILE 05 · THE WRIGHT BROTHERS</span><h3>Describe a place</h3><div class="example"><b>FACT A</b><br>Kitty Hawk is a place in North Carolina.</div><div class="example"><b>FACT B</b><br>The Wright brothers made their famous powered flight there in 1903.</div><p class="small muted"><b>Try:</b> Kitty Hawk is the place...</p><button class="btn light reveal" data-answer="Kitty Hawk is the place where the Wright brothers made their famous powered flight in 1903.">REVEAL ONE POSSIBLE CONNECTION</button><div class="feedback"></div></div>
+<div class="card"><span class="tag">FILE 06 · THE MICROWAVE OVEN</span><h3>Describe a moment</h3><div class="example"><b>FACT A</b><br>Percy Spencer noticed that a chocolate bar had melted.</div><div class="example"><b>FACT B</b><br>That moment led him to investigate how microwaves could heat food.</div><p class="small muted"><b>Try:</b> The moment...</p><button class="btn light reveal" data-answer="The moment when Percy Spencer noticed that a chocolate bar had melted led him to investigate how microwaves could heat food.">REVEAL ONE POSSIBLE CONNECTION</button><div class="feedback"></div></div>
+</div>
+<div class="card" style="margin-top:14px"><span class="tag">TEAM TALK</span><h3>What did you notice?</h3><p class="small muted">Discuss these questions before moving on.</p><ul class="checklist"><li>Which words helped you connect information about a person?</li><li>Which words helped you describe a thing, place or time?</li><li>Where did the connecting part appear — before or after the noun?</li><li>What happened to the repeated noun in the new sentence?</li></ul></div>
+<div class="footerNav"><button class="btn light" onclick="go('detectives')">← BACK</button><button class="btn primary" onclick="go('discover')">DISCOVER THE PATTERN →</button></div>
+</section>
+
+<section class="section" id="discover">
+<span class="tag">GRAMMAR DISCOVERY</span><h2>What is a defining relative clause?</h2>
+<p class="lead">A defining relative clause is a part of a sentence that gives <b>essential information</b> about a person, thing, place or time. It tells the reader exactly who or what we mean.</p>
+<div class="card">
+<h3>Start with two simple sentences</h3>
+<div class="compare">
+<div class="card bad"><span class="tag">SENTENCE A</span><p><b>A tactile reading system</b> uses patterns of raised dots.</p></div>
+<div class="card bad"><span class="tag">SENTENCE B</span><p><b>The system</b> can be read by touch.</p></div>
+</div>
+<div class="callout" style="margin-top:12px">Both sentences talk about the same person. We can join them and avoid repeating the name.</div>
+<div class="card goodcard" style="margin-top:12px"><span class="tag">ONE CONNECTED SENTENCE</span><p style="font-size:18px"><b>A tactile reading system</b> <span class="rel">that uses patterns of raised dots</span> can be read by touch.</p><p class="small muted">The relative clause tells us which reading system we mean. It is essential information, so this is a defining relative clause.</p></div>
+</div>
+<div class="grid" style="margin-top:14px">
+<div class="card"><h3>Find the noun</h3><p class="small muted">The noun is the person, thing, place or time we want to describe.</p><div class="example"><span class="noun">The inventor</span> who developed the telephone...</div><div class="example"><span class="noun">A device</span> that helps doctors listen...</div></div>
+<div class="card"><h3>Find the relative clause</h3><p class="small muted">It begins with a relative word and tells us more about the noun.</p><div class="example">The inventor <span class="rel">who developed the telephone</span>...</div><div class="example">A device <span class="rel">that helps doctors listen</span>...</div></div>
+</div>
+<div class="card" style="margin-top:14px"><span class="tag">THE BIG IDEA</span><h3>Think of it like a label attached to a noun</h3><p class="lead">A relative clause works like a detailed label. It answers “Which one?” or “What kind?” and helps the reader identify the noun more precisely.</p>
+<div class="example"><span class="noun">The invention</span> <span class="rel">that changed communication</span> became popular around the world.<br><span class="muted small">Which invention? The one that changed communication.</span></div>
+</div>
+<div class="footerNav"><button class="btn light" onclick="go('reports')">← BACK</button><button class="btn primary" onclick="go('toolkit')">GRAMMAR TOOLKIT →</button></div>
+</section>
+
+<section class="section" id="toolkit">
+<span class="tag">GRAMMAR TOOLKIT · STEP BY STEP</span><h2>Choose the right relative word</h2>
+<p class="lead">First find the noun you want to describe. Then ask: Is it a person, a thing, a place, a time, or does it show possession?</p>
+<div class="tablewrap card">
+<table><thead><tr><th>Relative word</th><th>Use it for…</th><th>Example connected to inventions</th><th>Ask yourself…</th></tr></thead>
+<tbody>
+<tr><td><b class="rel">WHO</b></td><td>People</td><td>Louis Braille was the educator <b>who developed</b> the system.</td><td>Am I describing a person?</td></tr>
+<tr><td><b class="rel">WHICH</b></td><td>Things / animals</td><td>The stethoscope is an instrument <b>which helps</b> doctors listen.</td><td>Am I describing a thing?</td></tr>
+<tr><td><b class="rel">THAT</b></td><td>People or things in defining clauses</td><td>The device <b>that changed</b> communication was the telephone.</td><td>Can I use a general option for a person or thing?</td></tr>
+<tr><td><b class="rel">WHERE</b></td><td>Places</td><td>The laboratory <b>where he worked</b> had special equipment.</td><td>Am I describing a place?</td></tr>
+<tr><td><b class="rel">WHEN</b></td><td>Times / moments</td><td>1903 was the year <b>when the Wright brothers flew</b>.</td><td>Am I describing a time?</td></tr>
+<tr><td><b class="rel">WHOSE</b></td><td>Possession / relationship</td><td>Laennec was the doctor <b>whose invention</b> helped medicine.</td><td>Does something belong to this person / thing?</td></tr>
+</tbody></table></div>
+<div class="callout" style="margin-top:13px"><b>Important:</b> “That” can replace “who” or “which” in defining relative clauses. It is common in everyday English. Do not use “that” after a comma in a non-defining clause. Today, focus on defining clauses.</div>
+<h3 style="margin-top:22px">Build a sentence: where does the clause go?</h3>
+<div class="grid">
+<div class="card"><span class="tag">FORMULA</span><h3>NOUN + RELATIVE WORD + CLAUSE</h3><div class="example"><span class="noun">The inventor</span> + <span class="rel">who</span> + developed the telephone</div><p class="small muted">The relative clause comes immediately after the noun it describes.</p></div>
+<div class="card"><span class="tag">FULL SENTENCE</span><h3>Put the parts together</h3><div class="example">The inventor <span class="rel">who developed the telephone</span> changed communication.</div><p class="small muted">Do not put the clause at the end if that makes it unclear which noun it describes.</p></div>
+</div>
+<h3 style="margin-top:22px">Subject or object? This is the part that often causes confusion.</h3>
+<p class="lead">A relative word can do two different jobs inside the relative clause. Let's look at the difference.</p>
+<div class="tabs" id="roleTabs"><button class="active" data-tab="subject">1 · RELATIVE WORD = SUBJECT</button><button data-tab="object">2 · RELATIVE WORD = OBJECT</button></div>
+<div class="tabpane active" id="subject">
+<div class="card">
+<span class="tag">THE RELATIVE WORD DOES THE ACTION</span><h3>Subject relative clause</h3>
+<div class="example">The inventor <span class="rel">who</span> <b>created</b> the device became famous.</div>
+<p>The inventor created the device. The word <b>who</b> replaces “the inventor” and does the action (created).</p>
+<div class="callout warning"><b>Do not remove the relative word.</b><br>❌ The inventor created the device became famous.<br>✅ The inventor <b>who</b> created the device became famous.</div>
+<p class="small muted">Look after the relative word: it is followed directly by a verb (created).</p>
+</div></div>
+<div class="tabpane" id="object">
+<div class="card">
+<span class="tag">THE RELATIVE WORD RECEIVES THE ACTION</span><h3>Object relative clause</h3>
+<div class="example">The device <span class="rel">that</span> the inventor <b>created</b> became famous.</div>
+<p>The inventor created the device. Inside the relative clause, “the inventor” is the subject and “that” represents the device (the object).</p>
+<div class="callout success"><b>You can remove the relative word.</b><br>✅ The device <b>that</b> the inventor created became famous.<br>✅ The device the inventor created became famous.</div>
+<p class="small muted">Look after the relative word: you see a subject (the inventor) before the verb (created).</p>
+</div></div>
+<div class="card" style="margin-top:14px"><h3>A quick way to recognize the difference</h3>
+<div class="compare"><div class="card goodcard"><b>WHO + VERB</b><p class="small">The scientist <b>who discovered</b> the problem...</p><p class="small muted">WHO does the action. Do not omit it.</p></div><div class="card goodcard"><b>WHO / THAT + SUBJECT + VERB</b><p class="small">The problem <b>that the scientist discovered</b>...</p><p class="small muted">The scientist does the action. You may omit THAT.</p></div></div></div>
+<h3 style="margin-top:22px">Defining means essential: no commas</h3>
+<div class="compare"><div class="card bad"><span class="tag">NOT DEFINING · NOT TODAY'S FOCUS</span><p>The telephone, which was invented in the 19th century, changed communication.</p><p class="small muted">The clause is extra information; commas separate it.</p></div><div class="card goodcard"><span class="tag">DEFINING · TODAY'S FOCUS</span><p>The invention <b>that changed communication</b> was the telephone.</p><p class="small muted">The clause tells us which invention. No commas.</p></div></div>
+<div class="callout" style="margin-top:14px"><b>Remember:</b> In a defining relative clause, the information helps identify the noun. We do not put commas around it.</div>
+<div class="footerNav"><button class="btn light" onclick="go('discover')">← BACK</button><button class="btn primary" onclick="go('practice')">PRACTICE THE PATTERNS →</button></div>
+</section>
+
+<section class="section" id="practice">
+<span class="tag">PRACTICE LAB</span><h2>Let's make the grammar automatic</h2><p class="lead">Work through the challenges in order. Read the feedback after each answer. You can retry a question before moving on.</p>
+<div class="tabs" id="practiceTabs"><button class="active" data-tab="p1">LAB 1 · CHOOSE THE WORD</button><button data-tab="p2">LAB 2 · COMBINE</button><button data-tab="p3">LAB 3 · SUBJECT OR OBJECT?</button><button data-tab="p4">LAB 4 · FIX IT</button></div>
+<div class="tabpane active" id="p1"><div class="card"><h3>Lab 1 — Choose the correct relative word</h3><p class="small muted">Choose who, which, that, where, when or whose.</p><div id="quiz1"></div></div></div>
+<div class="tabpane" id="p2"><div class="card"><h3>Lab 2 — Connect the two ideas</h3><p class="small muted">Choose the best way to combine the sentences into one defining relative clause.</p><div id="quiz2"></div></div></div>
+<div class="tabpane" id="p3"><div class="card"><h3>Lab 3 — Can you omit the relative word?</h3><p class="small muted">Decide whether the relative word is the subject or the object. Then choose the correct explanation.</p><div id="quiz3"></div></div></div>
+<div class="tabpane" id="p4"><div class="card"><h3>Lab 4 — Detective editor</h3><p class="small muted">Find the problem and choose the corrected sentence.</p><div id="quiz4"></div></div></div>
+<div class="footerNav"><button class="btn light" onclick="go('toolkit')">← BACK TO TOOLKIT</button><button class="btn primary" onclick="go('upgrade')">UPGRADE YOUR REPORT →</button></div>
+</section>
+
+<section class="section" id="upgrade">
+<span class="tag">FINAL TASK · APPLY IT TO YOUR VIDEO</span><h2>Upgrade your video report</h2><p class="lead">Return to the invention you researched in Class 13. Your goal is to make your report clearer and more informative by connecting ideas with defining relative clauses.</p>
+<div class="grid">
+<div class="card"><span class="tag">STEP 1 · COLLECT YOUR INFORMATION</span><h3>Use your original report</h3><p class="small muted">Write short notes. You do not need complete sentences yet.</p>
+<label class="label">INVENTION — What is it?</label><input type="text" placeholder="Name and purpose">
+<label class="label">INVENTOR — Who developed it?</label><input type="text" placeholder="Name and information about the person">
+<label class="label">FEATURE / PURPOSE — What does it do?</label><input type="text" placeholder="A feature or function">
+<label class="label">PLACE / TIME — Where or when did it happen?</label><input type="text" placeholder="Place or moment">
+<label class="label">IMPACT — What changed?</label><input type="text" placeholder="How it changed people's lives">
+</div>
+<div class="card"><span class="tag">STEP 2 · CONNECT YOUR NOTES</span><h3>Use these sentence frames</h3>
+<div class="example">The invention is a device <b class="rel">that</b>...</div>
+<div class="example">The inventor was a person <b class="rel">who</b>...</div>
+<div class="example">It was developed in a period <b class="rel">when</b>...</div>
+<div class="example">It was created in a place <b class="rel">where</b>...</div>
+<div class="example">The inventor, <b class="rel">whose</b> work...</div>
+<div class="example">It is an invention <b class="rel">which</b>...</div>
+</div></div>
+<div class="card" style="margin-top:14px"><span class="tag">STEP 3 · WRITE YOUR UPGRADED PARAGRAPH</span><h3>Make your report flow</h3><p class="small muted">Write 5–7 connected sentences. Include at least three defining relative clauses. Use accurate information from your video report.</p><textarea placeholder="The invention I researched is..."></textarea>
+<div class="callout" style="margin-top:12px"><b>Check before you finish:</b><ul class="checklist"><li>Did I use WHO for a person?</li><li>Did I use WHICH or THAT for a thing?</li><li>Does each relative clause come immediately after the noun it describes?</li><li>Did I avoid commas in defining relative clauses?</li><li>Did I check that I did not omit a subject relative pronoun?</li></ul></div></div>
+<div class="card" style="margin-top:14px"><span class="tag">STEP 4 · SHARE & REVIEW</span><h3>Partner review</h3><p>Exchange paragraphs. Your partner should underline each relative clause, circle the noun it describes and check the relative word. Give one suggestion to make the paragraph clearer.</p>
+<div class="grid"><div class="card"><b>One strong sentence</b><p class="small muted">Which sentence connects ideas especially well?</p></div><div class="card"><b>One helpful suggestion</b><p class="small muted">Is there a relative word or sentence that could be improved?</p></div></div></div>
+<div class="callout success" style="margin-top:14px"><b>Next class preview:</b> You will use these same tools to write a short biography of an inventor. Today, you learned how to describe people, inventions, places and moments. Next, you will use those skills to tell a person's story.</div>
+<div class="footerNav"><button class="btn light" onclick="go('practice')">← BACK TO PRACTICE</button><button class="btn dark" onclick="go('start')">FINISH CLASS ✓</button></div>
+</section>
+</main></div>
+<script>
+function go(id){document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.go===id));window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
+document.querySelectorAll('.reveal').forEach(btn=>btn.addEventListener('click',()=>{const box=btn.nextElementSibling;box.className='feedback show ok';box.innerHTML='<b>One possible connection:</b> '+btn.dataset.answer;btn.disabled=true;btn.textContent='CONNECTION REVEALED';}));
+function setupTabs(root){const box=document.getElementById(root);if(!box)return;box.querySelectorAll('button[data-tab]').forEach(btn=>btn.addEventListener('click',()=>{box.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b===btn));const parent=box.parentElement;parent.querySelectorAll('.tabpane').forEach(p=>p.classList.toggle('active',p.id===btn.dataset.tab))}))}
+setupTabs('roleTabs');setupTabs('practiceTabs');
+const banks={
+quiz1:[
+["The scientist ___ developed the first design tested it carefully.",["who","where","whose","when"],0,"WHO refers to a person. The scientist is the person who developed the design."],
+["The instrument ___ doctors use to listen to the heart is a stethoscope.",["where","that","whose","when"],1,"THAT refers to a thing here: the instrument. It is followed by the subject 'doctors'."],
+["The laboratory ___ the team tested the device was very small.",["who","whose","where","which"],2,"WHERE refers to a place. The laboratory is the place in which they tested the device."],
+["The year ___ the first website went live was 1991.",["who","which","whose","when"],3,"WHEN refers to a time. The year is the time when the event happened."],
+["The inventor ___ idea changed medicine worked in France.",["who","which","whose","where"],2,"WHOSE shows possession or a relationship: the inventor's idea."],
+["The machine ___ uses microwaves can heat food quickly.",["that","where","when","whose"],0,"THAT refers to a thing and introduces the clause describing the machine."],
+["The engineer ___ noticed the burrs studied them carefully.",["where","who","when","which"],1,"WHO refers to the engineer, a person. WHO is the subject of 'noticed'."],
+["The website ___ you visited contains information about the invention.",["who","where","that","whose"],2,"THAT refers to the website. It is the object of 'visited' and can be omitted."],
+["The city ___ the first public demonstration took place attracted many visitors.",["which","who","where","whose"],2,"WHERE refers to the city, the place where the demonstration happened."],
+["The moment ___ he noticed the problem changed the project.",["when","who","where","whose"],0,"WHEN refers to the moment, a point in time."],
+["The doctor ___ patients trusted introduced a new instrument.",["whose","which","where","when"],0,"WHOSE expresses the relationship: the patients trusted the doctor. 'Whose patients' means the patients of that doctor."],
+["The invention ___ changed daily communication became widely used.",["where","who","that","whose"],2,"THAT refers to the invention, a thing. It is the subject of 'changed', so do not omit it."]
+],
+quiz2:[
+["Two ideas: 'The woman invented a safer bandage. She worked for a medical company.'",["The woman which worked for a medical company invented a safer bandage.","The woman who worked for a medical company invented a safer bandage.","The woman where worked for a medical company invented a safer bandage."],1,"WHO describes a person. The clause 'who worked for a medical company' identifies the woman."],
+["Two ideas: 'The device became popular. The device helped people communicate.'",["The device that helped people communicate became popular.","The device who helped people communicate became popular.","The device where helped people communicate became popular."],0,"THAT describes a thing. The relative clause tells us which device became popular."],
+["Two ideas: 'The inventor received a patent. The inventor developed the system.'",["The inventor which developed the system received a patent.","The inventor where developed the system received a patent.","The inventor who developed the system received a patent."],2,"WHO is used for the inventor, a person, and it is the subject of 'developed'."],
+["Two ideas: 'The lab was in Paris. The team tested the machine there.'",["The lab when the team tested the machine was in Paris.","The lab where the team tested the machine was in Paris.","The lab who the team tested the machine was in Paris."],1,"WHERE connects the place with the action that happened there."],
+["Two ideas: 'The year was 1903. The Wright brothers made their famous flight then.'",["The year when the Wright brothers made their famous flight was 1903.","The year who the Wright brothers made their famous flight was 1903.","The year where the Wright brothers made their famous flight was 1903."],0,"WHEN refers to the time: the year when the flight happened."],
+["Two ideas: 'The scientist had a team. The scientist's team improved the design.'",["The scientist which team improved the design...","The scientist whose team improved the design...","The scientist where team improved the design..."],1,"WHOSE shows possession: the team belonged to / worked with the scientist."],
+["Two ideas: 'I watched a video. The video explained the invention.'",["I watched a video who explained the invention.","I watched a video where explained the invention.","I watched a video that explained the invention."],2,"THAT refers to the video. It is the subject of 'explained', so it must stay."],
+["Two ideas: 'The inventor designed a tool. Doctors still use the tool.'",["The tool which doctors still use was designed by the inventor.","The tool who doctors still use was designed by the inventor.","The tool where doctors still use was designed by the inventor."],0,"WHICH refers to a thing. Here it is the object of 'use'; the subject is 'doctors'."],
+["Two ideas: 'The village was small. The inventor grew up there.'",["The village when the inventor grew up was small.","The village where the inventor grew up was small.","The village whose the inventor grew up was small."],1,"WHERE describes the place in which the inventor grew up."],
+["Two ideas: 'The invention solved a problem. The problem affected many people.'",["The invention solved a problem who affected many people.","The invention solved a problem that affected many people.","The invention solved a problem where affected many people."],1,"THAT refers to the problem, a thing/idea. It is the subject of 'affected'."],
+["Two ideas: 'The doctor used an instrument. The instrument was easy to carry.'",["The doctor used an instrument which was easy to carry.","The doctor used an instrument who was easy to carry.","The doctor used an instrument where was easy to carry."],0,"WHICH refers to the instrument, a thing. It is the subject of 'was'."],
+["Two ideas: 'The inventor's discovery changed medicine. The inventor was young.'",["The inventor whose discovery changed medicine was young.","The inventor which discovery changed medicine was young.","The inventor where discovery changed medicine was young."],0,"WHOSE links the inventor with the discovery that belonged to or was made by that inventor."]
+],
+quiz3:[
+["The scientist who discovered the problem changed the design. Can you remove WHO?",["Yes. WHO is the object.","No. WHO is the subject of 'discovered'.","Yes. The sentence needs no subject."],1,"WHO performs the action 'discovered'. A subject relative pronoun cannot be omitted."],
+["The device that the engineer designed became popular. Can you remove THAT?",["Yes. 'The engineer' is the subject of 'designed'.","No. THAT is the subject of 'designed'.","No. Relative words can never be omitted."],0,"The engineer designed the device. THAT is the object, so it can be omitted: 'The device the engineer designed...'"],
+["The inventor who worked in France developed the system. Is WHO subject or object?",["Object","Possessive","Subject"],2,"WHO is the subject because the inventor worked in France."],
+["The system which people use today is easy to learn. Can WHICH be omitted?",["Yes. 'People' is the subject of 'use'.","No. WHICH is the subject of 'use'.","Yes. It is a place."],0,"People use the system. WHICH is the object and can be omitted: 'The system people use today...'"],
+["The scientist who tested the prototype wrote a report. Can WHO be omitted?",["Yes, always.","No, WHO is the subject of 'tested'.","Yes, because scientist is a person."],1,"WHO is doing the action 'tested'. It must remain."],
+["The prototype that the team tested was successful. Can THAT be omitted?",["Yes, because 'the team' is the subject of 'tested'.","No, because prototype is a thing.","No, because THAT always stays."],0,"The team tested the prototype. THAT is the object, so it can be omitted."],
+["The inventor whose work changed medicine became famous. What does WHOSE show?",["A place","Possession / relationship","A time"],1,"WHOSE connects the inventor with the work. It shows a relationship or possession."],
+["The laboratory where they worked was old. Can WHERE be omitted in this sentence?",["Yes, because it is always optional.","No, it introduces the place relationship here.","Yes, because laboratory is a thing."],1,"WHERE introduces the place relationship. You cannot simply remove it and keep the same sentence structure."],
+["The year when the device appeared was important. What does WHEN refer to?",["A person","A thing","A time"],2,"WHEN refers to the year, a time."],
+["The invention that changed communication became popular. Can THAT be omitted?",["No. THAT is the subject of 'changed'.","Yes. THAT is the object.","Yes. It refers to a person."],0,"The invention changed communication. THAT is the subject of 'changed', so it cannot be omitted."],
+["The book which I read described the inventor. Can WHICH be omitted?",["Yes. 'I' is the subject of 'read'.","No. WHICH is the subject of 'read'.","No. WHICH refers to a place."],0,"I read the book. WHICH is the object and can be omitted: 'The book I read...'"],
+["The engineer who created the system worked with a team. What is WHO doing?",["Receiving the action","Showing possession","Doing the action"],2,"The engineer created the system. WHO is the subject of the relative clause."]
+],
+quiz4:[
+["The scientist which invented the device became famous.",["The scientist who invented the device became famous.","The scientist where invented the device became famous.","The scientist whose invented the device became famous."],0,"Use WHO for a person. WHICH is normally used for things and animals."],
+["The invention who changed medicine was important.",["The invention where changed medicine was important.","The invention that changed medicine was important.","The invention whose changed medicine was important."],1,"Use THAT or WHICH for a thing. WHO is for people."],
+["The laboratory which the team tested the device was small.",["The laboratory when the team tested the device was small.","The laboratory where the team tested the device was small.","The laboratory who the team tested the device was small."],1,"Use WHERE for the place in which an action happened."],
+["The inventor, that developed the system, received an award.",["The inventor who developed the system received an award.","The inventor that developed the system received an award.","The inventor where developed the system received an award."],0,"For this defining clause, use WHO for the person and do not use commas. THAT is not used after a comma in non-defining clauses."],
+["The machine who the engineer designed was efficient.",["The machine whose the engineer designed was efficient.","The machine which the engineer designed was efficient.","The machine where the engineer designed was efficient."],1,"The machine is a thing, so use WHICH or THAT. Here it is the object of designed."],
+["The year where the first flight happened was 1903.",["The year when the first flight happened was 1903.","The year who the first flight happened was 1903.","The year whose the first flight happened was 1903."],0,"Use WHEN for a time, not WHERE."],
+["The inventor whose invented the device was young.",["The inventor who invented the device was young.","The inventor where invented the device was young.","The inventor which invented the device was young."],0,"WHOSE shows possession and must be followed by a noun (whose invention / whose work). WHO is the subject of invented."],
+["The device that the scientist developed it became popular.",["The device that the scientist developed became popular.","The device who the scientist developed it became popular.","The device where the scientist developed it became popular."],0,"Do not repeat the object. THAT already represents 'the device', so remove 'it'."],
+["The inventor who the team interviewed was very helpful.",["The inventor who was the team interviewed very helpful.","The inventor who the team interviewed was very helpful.","The inventor whose the team interviewed was very helpful."],1,"This sentence is already correct. WHO is the object of interviewed, so it can also be omitted: 'The inventor the team interviewed...'."],
+["The place when the inventor worked was a small town.",["The place who the inventor worked was a small town.","The place where the inventor worked was a small town.","The place whose the inventor worked was a small town."],1,"Use WHERE for a place. WHEN refers to a time."],
+["The inventor which idea changed medicine received an award.",["The inventor whose idea changed medicine received an award.","The inventor who idea changed medicine received an award.","The inventor where idea changed medicine received an award."],0,"Use WHOSE before a noun to show the inventor's idea."],
+["The invention that helped doctors listen, became widely used.",["The invention that helped doctors listen became widely used.","The invention, that helped doctors listen, became widely used.","The invention who helped doctors listen became widely used."],0,"This is a defining clause identifying the invention, so remove the comma. THAT is the subject of helped."]
+]
+};
+function renderQuiz(containerId,data){
+ const root=document.getElementById(containerId);let i=0,selected=null,locked=false,correctCount=0;
+ function draw(){
+  selected=null;locked=false;const q=data[i];
+  root.innerHTML=`<div class="qtop"><span>CHALLENGE ${i+1} / ${data.length}</span><span>${correctCount} CORRECT</span></div><div class="progress"><span style="width:${i/data.length*100}%"></span></div><div class="qtext">${q[0]}</div><div class="opts"></div><div class="feedback"></div><div class="quizcontrols"><button class="btn primary check">CHECK</button><button class="btn light next" style="display:none">${i===data.length-1?'FINISH LAB':'NEXT →'}</button></div>`;
+  const opts=root.querySelector('.opts');q[1].forEach((v,n)=>{let b=document.createElement('button');b.className='opt';b.textContent=String.fromCharCode(65+n)+'. '+v;b.addEventListener('click',()=>{if(locked)return;selected=n;opts.querySelectorAll('button').forEach(x=>x.classList.remove('selected'));b.classList.add('selected')});opts.appendChild(b)});
+  root.querySelector('.check').addEventListener('click',()=>{
+   const f=root.querySelector('.feedback');if(selected===null){f.className='feedback show no';f.textContent='Choose an answer before checking.';return}
+   locked=true;const ok=selected===q[2];if(ok)correctCount++;
+   opts.querySelectorAll('button').forEach((b,n)=>{b.disabled=true;if(n===q[2])b.classList.add('correct');else if(n===selected)b.classList.add('wrong')});
+   f.className='feedback show '+(ok?'ok':'no');f.innerHTML=`<b>${ok?'Correct!':'Not quite.'}</b> ${q[3]}`;
+   root.querySelector('.check').style.display='none';root.querySelector('.next').style.display='inline-flex';
+  });
+  root.querySelector('.next').addEventListener('click',()=>{if(i<data.length-1){i++;draw()}else{root.innerHTML=`<div class="callout success"><b>Lab complete!</b><br>You answered ${correctCount} out of ${data.length} correctly on your first try. Review the explanations and try again if you want more practice.</div><button class="btn primary restart" style="margin-top:12px">TRY THIS LAB AGAIN</button>`;root.querySelector('.restart').addEventListener('click',()=>{i=0;correctCount=0;draw()})}});
+ }
+ draw();
+}
+renderQuiz('quiz1',banks.quiz1);renderQuiz('quiz2',banks.quiz2);renderQuiz('quiz3',banks.quiz3);renderQuiz('quiz4',banks.quiz4);
+</script></body></html>
